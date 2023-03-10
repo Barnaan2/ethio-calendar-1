@@ -7,7 +7,7 @@
     "author":{
         "name":["Bernabas Tekkalign","Abel Kinfu"],
         "email":"ethiocalendar@gmail.com",
-"url":"https://ethiocalendar.com"
+        "url":"https://ethiocalendar.com"
 
     },
     "main":"src/index.js",
