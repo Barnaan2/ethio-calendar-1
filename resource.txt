@@ -1,2 +1,5 @@
 Resource for the packege will be written here .
-
+  # source for the day in the month and the year difference between the Ethiopian and Gregorian calendar 
+https://simple.wikipedia.org/wiki/Gregorian_calendar#:~:text=Months.%20The%20months%20of%20the%20Gregorian%20calendar%20year,days%2C%20then%20the%20year%20is%20365%20days%20long.
+  # source for testing and verifying initial logic for calculation 
+https://www.calendar-converter.com/ethiopian/
