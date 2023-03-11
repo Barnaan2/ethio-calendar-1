@@ -3,6 +3,6 @@
    let modules = year % 4
    return modules === 0 ? true:false  
   }
-  console.log(isLeapYear(2012))
-  console.log(isLeapYear(2014))
+  // console.log(isLeapYear(2012))
+  // console.log(isLeapYear(2014))
 
