@@ -1,4 +1,6 @@
 // // Date manipulation resources
+import { yearDifference } from "./yearDiff.js";
+console.log(yearDifference(10))
 // class EthioDate{
 //     constructor(date,month,year){
 //         this.date=date
