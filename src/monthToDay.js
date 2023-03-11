@@ -1,4 +1,4 @@
-import { isLeapYear } from "./leapYear.js";
+
 // Day length in gorgerian calendar starting from [september to August]
 const dayInMonth = [30 , 31 ,30 ,31,31 ,28 ,31 ,30 ,31 ,30,31 ,31]
 // date relation this will be used to convert the month line as the one that match habesha month arrangement 
@@ -11,9 +11,9 @@ const monthInWord = ["sep", "oct", "nov", "dec", "jan", "feb", "march", "april",
 export function monthToDay(month,isLeapYear){
     let totalDays=0;
     let newMonth = gorgToEthioMonth[month-1]
-    for(let i=0;i<newMonth;i++){
+    for(let i=1;i<newMonth;i++){
 
-        console.log(monthInWord[i], i,dayInMonth[i])
+        // console.log(monthInWord[i], i,dayInMonth[i])
         if(i===5 && isLeapYear){
           totalDays +=dayInMonth[i]+1;
         }
@@ -25,4 +25,4 @@ export function monthToDay(month,isLeapYear){
 }
 
 // there is some error while parsing this date so 
-console.log(monthToDay(7,false)) // fixed
+// console.log(monthToDay(7,true)) // fix me

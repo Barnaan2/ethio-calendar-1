@@ -1,3 +1,4 @@
 export function ethioNewYear(gregorianNewYear,yearDiff){
-    return `${gregorianNewYear.split('/')[0] - yearDiff}/1/1`
+   
+    return `${gregorianNewYear - yearDiff}/1/1`
 }
