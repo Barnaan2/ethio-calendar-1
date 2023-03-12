@@ -22,9 +22,7 @@ return `${year}/9/${sepDate}`;
 
 }
 
-
-//current year
-
+ //! Fix ME :( !  write me in tests directory 
 // let date = new Date()
 //   let  greg = gregorianNewYear(date)
 //   console.log(greg)

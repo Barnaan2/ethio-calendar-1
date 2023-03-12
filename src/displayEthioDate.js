@@ -1,35 +1,11 @@
-import { isLeapYear } from "./leapYear.js";
 
-export function displayEthioDate(leftMonth,leftDay,ethioNewY){
-  console.log(leftMonth)
-
-  if(( parseInt(leftMonth) === 12)){
-    console.log("month is 13")
-    if(leftDay > 5){
-      let customDay = leftDay - 5;
-      if(isLeapYear(+ethioNewY[0])){
-         customDay += 1
-        return `${ +ethioNewY[0] + 1}/${parseInt(ethioNewY[1])}/ ${parseInt(customDay)}`;
-      }
-     else{
-      return `${ +ethioNewY[0] + 1}/${parseInt(ethioNewY[1])}/${parseInt(customDay)}`;
-     }
-    }
-    else{
-      if(!isLeapYear(+ethioNewY[0])){
-        return `${ethioNewY[0]}/${ parseInt(ethioNewY[1]) + parseInt(leftMonth)}/${ parseInt(ethioNewY[2]) + parseInt(leftDay)}`;
-      }
-      else{
-        return `${ +ethioNewY[0] + 1}/${ parseInt(ethioNewY[1])}/${ parseInt(ethioNewY[2])}`;
-      }
-
-    }
-   
-  }
-
-else{
-  return `${ethioNewY[0]}/${ parseInt(ethioNewY[1]) + parseInt(leftMonth)}/${ parseInt(ethioNewY[2]) + parseInt(leftDay)}`;
-}
-
-
+import { pagume } from "./pagume.js";
+// A factory method: to create a EthioDate instance
+export function displayEthioDate(leftMonth,leftDay,ethiopNewY){
+// Month counting  starts from zero like an array's index so the 12th month is pagume or its 13th in calendar
+  return !(parseInt(leftMonth) === 12 )
+    ? `${ethiopNewY[0]}/${ parseInt(ethiopNewY[1]) + 
+      parseInt(leftMonth)}/${ parseInt(ethiopNewY[2]) + 
+      parseInt(leftDay)}`
+    : pagume(leftDay,leftMonth,ethiopNewY) ;
 }
